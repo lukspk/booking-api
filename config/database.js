@@ -1,7 +1,7 @@
 module.exports = {
-  username: 'root',
-  password: 'root',
+  username: 'default',
+  password: 'secret',
   database: 'booking',
-  host: 'postgres',
-  dialect: 'pgsql'
+  host: '127.0.0.1',
+  dialect: 'postgres'
 }
