@@ -10,6 +10,8 @@ const routes = express.Router();
 
 // routes.get
 
+routes.put('/types/:id',TypesController.update);
+routes.get('/types', TypesController.index);
 routes.post('/types',TypesController.store);
 
 module.exports = routes;
