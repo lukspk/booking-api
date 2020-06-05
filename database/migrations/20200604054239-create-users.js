@@ -33,7 +33,8 @@ module.exports = {
       profile_id: {
         allowNull: false,
         type: Sequelize.UUID,
-        references : {model : 'Profile', key : 'id'}
+        references : {model : 'profiles', key : 'id'}
+        // profiles é o nome da tabela
       }
     })
   },
@@ -46,5 +47,6 @@ module.exports = {
       Example:
       return queryInterface.dropTable('users');
     */
+   return queryInterface.dropTable('users');
   }
 };

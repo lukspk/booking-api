@@ -27,7 +27,7 @@ module.exports = {
     status_id : {
       allowNull : false,
       type : Sequelize.UUID,
-      references : { model : 'Status', key : 'id'}
+      references : { model : 'status', key : 'id'}
     },
   });
   },
@@ -40,5 +40,6 @@ module.exports = {
       Example:
       return queryInterface.dropTable('users');
     */
+   return queryInterface.dropTable('bookings');
   }
 };

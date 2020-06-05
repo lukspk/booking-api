@@ -31,7 +31,7 @@ module.exports = {
     type_id : {
       allowNull : false,
       type : Sequelize.UUID,
-      references : { model : 'Type', key : 'id'}
+      references : { model : 'types', key : 'id'}
     }
   });
   },
@@ -44,5 +44,6 @@ module.exports = {
       Example:
       return queryInterface.dropTable('users');
     */
+   return queryInterface.dropTable('products');
   }
 };
